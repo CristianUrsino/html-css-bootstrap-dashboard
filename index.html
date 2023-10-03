@@ -10,8 +10,26 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="debug d-flex">
-            
+        <header class="debug d-flex align-items-center">
+            <figure class="debug"><img src="img/logo.svg" alt="logo"></figure>
+            <div class="input-group flex-nowrap ms-3">
+                <span class="input-group-text bg-gray border-none" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" class="form-control bg-gray" placeholder="Search" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+            <div id="icon-wrapper">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="dropdown d-inline">
+                    <button id="header-dropdown" type="button" data-bs-toggle="dropdown"><i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
         </header>
         <main class="debug">
             <div id="sidebar" class="debug">

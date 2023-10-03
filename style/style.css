@@ -14,6 +14,12 @@ img{
 .bg-primary{
     background-color: var(--my-primary);
 }
+.bg-gray{
+    background-color: var(--my-gray);
+}
+.border-none{
+    border: none; !important
+}
 /* *************STUCTURE************* */
 .wrapper{
     width: 100%;
@@ -38,4 +44,30 @@ main{
 #main-content{
     overflow-y:auto ;
     width: calc(100% - 150px);
+}
+/*header*/
+header figure{
+    width: 150px;
+    height: 70px;
+    margin: 0;
+}
+header figure img{
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+header .input-group{
+    width: calc(100% - 300px);
+}
+#icon-wrapper{
+    width: 150px;
+    text-align: center;
+}
+#icon-wrapper>*{
+    margin-left: 10px;
+}
+#header-dropdown{
+   border: none;
+   color:#ff8f00;
+   padding: 0;
 }
