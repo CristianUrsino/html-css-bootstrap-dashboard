@@ -7,7 +7,7 @@
     --my-btn-color: #165bba;
 }
 body{
-    font-size: 0.7em;
+    font-family: 'Courier New', Courier, monospace;/*trovarli*/
 }
 img{
     width: 100%;
@@ -43,12 +43,6 @@ img{
 .border-none{
     border: none !important;
 }
-#main-nav>div{
-    width: calc(100% / 4);
-}
-#main-nav>div:first-of-type{
-    width: calc(100% / 2);
-}
 /* *************STUCTURE************* */
 .wrapper{
     width: 100%;
@@ -65,38 +59,32 @@ main{
     display: flex;
 }
 #sidebar{
-    width: 150px;
     height: 100%;
     background-color: var(--my-dark);
     background-image: url(../img/sidebar-bg.png);
 }
 #main-content{
     overflow-y:auto ;
-    width: calc(100% - 150px);
+    flex-grow: 1;
+}
+/* sidebar */
+#sidebar i{
+    display: inline-block;
+    width: 15px;
 }
 /*header*/
+header .row{
+    width: 100%;
+}
 header figure{
-    width: 150px;
-    height: 70px;
     margin: 0;
-}
-header figure img{
-    position: relative;
-    top: 50%;
-    transform: translate(0,-50%);
-}
-header .input-group{
-    width: calc(100% - 300px);
-}
-#icon-wrapper{
-    width: 150px;
-    text-align: center;
-}
-#icon-wrapper>*{
-    margin-left: 10px;
 }
 #header-dropdown{
    border: none;
    color:#ff8f00;
    padding: 0;
+}
+/* main nav */
+main .row{
+    width: 100%;
 }
