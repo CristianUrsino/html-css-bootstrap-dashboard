@@ -16,8 +16,9 @@
         <header class="debug container-fluid">
 
             <div class="row align-items-center h-100 debug ">
-                <figure class="debug col-2"><img src="img/logo.svg" alt="logo"></figure>
-                <div class="col-9 px-3">
+                <figure class="debug col-1 d-bloc d-lg-none"><img src="img/mobile-logo.png" alt="logo"></figure>
+                <figure class="debug col-2 d-none d-lg-block"><img src="img/logo.svg" alt="logo"></figure>
+                <div class="col-10 col-lg-9 px-3">
                     <div class="input-group flex-nowrap ">
                         <span class="input-group-text bg-gray border-none" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
                         <input type="text" class="form-control bg-gray" placeholder="Search" aria-label="Username" aria-describedby="addon-wrapping">
@@ -46,18 +47,20 @@
             
             <div id="sidebar" class="debug text-white  d-flex flex-column justify-content-between h-100">
                 <div>
-                    <div class="d-lg-px-5 px-4 py-3">
+                    <div class="d-lg-px-5 mx-2 my-2 px-3 py-2 text-nowrap">
                         <i class="fa-solid fa-magnifying-glass"></i> <span class="d-lg-inline-block d-none pe-3">Home</span>
                     </div>
-                    <div class="d-lg-px-5 px-4 py-3">
+                    <div class="d-lg-px-5 mx-2 my-2 px-3 py-2">
                         <i class="fa-solid fa-magnifying-glass"></i> <span class="d-lg-inline-block d-none pe-3">Home</span>
                     </div>
-                    <div class="d-lg-px-5 px-4 py-3">
+                    <div class="d-lg-px-5 mx-2 my-2 px-3 py-2">
                         <i class="fa-solid fa-magnifying-glass"></i> <span class="d-lg-inline-block d-none pe-3">Home</span>
                     </div>
                 </div>
-                <div class="d-lg-px-5 px-4 py-3">
-                    <i class="fa-solid fa-magnifying-glass"></i> <span class="d-lg-inline-block d-none pe-3">Home</span>
+                <div>
+                    <div class="d-lg-px-5 mx-2 my-2 px-3 py-2">
+                        <i class="fa-solid fa-magnifying-glass"></i> <span class="d-lg-inline-block d-none pe-3">Home</span>
+                    </div>
                 </div>
             </div>
 
@@ -85,7 +88,7 @@
                             <h2>125</h2>
                         </div>
                         <div class="debug col-12 col-sm-3">
-                            <span>Lorem, ipsum dolor.</span>
+                            <span>Lorem, ipsum.</span>
                             <button class="my-btn-square text-white border-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">+</button>
                             <!-- -----------OFFCANVAS---------  -->
                             <div class="offcanvas offcanvas-end " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
@@ -93,9 +96,9 @@
                                     <div>Lorem ipsum dolor sit amet.</div>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
-                                <div class="offcanvas-body container-fluid">
+                                <div class=" container-fluid">
                                     <form action="#">
-                                        <div class="row wrap">
+                                        <div class="row wrap debug">
                                             <div class="mb-3 col-12 col-sm-6">
                                                 <label for="input_nome" class="form-label">nome</label>
                                                 <input type="text" id="input_nome" class="form-control" value="">
@@ -248,7 +251,7 @@
 
 
                             <!-- ----------------SECTION 2--------------- -->
-                            <div class="border rouded mb-4">
+                            <div class="border rounded mb-4">
                                 <h2 class="ps-2 border-bottom pb-3">F.A.Q</h2>
                                 <div class="accordion" id="accordionExample">
                                     <div class="accordion-item border-0 mx-3">

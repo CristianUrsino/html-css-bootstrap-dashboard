@@ -85,14 +85,25 @@ main{
     display: inline-block;
     width: 15px;
 }
+#sidebar>div>div{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#sidebar>div>div:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
 /*header*/
 header figure{
     margin: 0;
 }
 #header-dropdown{
+    background-color: #fff;
    border: none;
    color:#ff8f00;
    padding: 0;
+}
+header i{
+    cursor: pointer;
 }
 /* main nav */
 @media screen AND (max-width:768px){
