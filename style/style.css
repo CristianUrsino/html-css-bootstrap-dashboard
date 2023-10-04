@@ -4,6 +4,10 @@
     --my-dark: #051e34;
     --my-gray: #e5e5e5;
     --my-light:#f8f9fa;
+    --my-btn-color: #165bba;
+}
+body{
+    font-size: 0.7em;
 }
 img{
     width: 100%;
@@ -11,14 +15,39 @@ img{
 .debug{
     border: 1px solid red;
 }
+/* ****************UTILITIES*************** */
 .bg-primary{
     background-color: var(--my-primary);
 }
 .bg-gray{
     background-color: var(--my-gray);
 }
+.my-btn{
+    background-color: var(--my-btn-color);
+    color: white;
+    border-radius: 20px;
+    padding: 2px 7px;
+    border: none;
+}
+#btn-offcanvas{
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid white;
+    width: 25px;
+    height: 25px;
+    border-radius: 2px;
+    margin-left: 10px;
+}
 .border-none{
     border: none !important;
+}
+#main-nav>div{
+    width: calc(100% / 4);
+}
+#main-nav>div:first-of-type{
+    width: calc(100% / 2);
 }
 /* *************STUCTURE************* */
 .wrapper{
