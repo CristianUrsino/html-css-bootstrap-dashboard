@@ -109,7 +109,7 @@ header figure{
 }
 /* first main div */
 #prossime-classi th{
-    font-weight: normal !important;
+    font-weight: normal ;
 }
 #prossime-class th:first-of-type,td:first-child{
     width: 40%;
