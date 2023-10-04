@@ -7,7 +7,8 @@
     --my-btn-color: #165bba;
 }
 body{
-    font-family: 'Courier New', Courier, monospace;/*trovarli*/
+    /* font-family: 'Courier New', Courier, monospace;*/
+    font-size: 0.8em;
 }
 img{
     width: 100%;
@@ -73,9 +74,6 @@ main{
     width: 15px;
 }
 /*header*/
-header .row{
-    width: 100%;
-}
 header figure{
     margin: 0;
 }
@@ -85,6 +83,8 @@ header figure{
    padding: 0;
 }
 /* main nav */
-main .row{
-    width: 100%;
+@media screen AND (max-width:768px){
+    #main-nav #offcanvasScrolling{
+        width: 100%;
+    }
 }
