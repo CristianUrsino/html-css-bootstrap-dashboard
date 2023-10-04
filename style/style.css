@@ -6,15 +6,12 @@
     --my-light:#f8f9fa;
     --my-btn-color: #165bba;
 }
-body{
-    /* font-family: 'Courier New', Courier, monospace;*/
-}
 img{
     width: 100%;
 }
-.debug{
+/* .debug{
     border: 1px solid red;
-}
+} */
 /* ****************UTILITIES*************** */
 .my-btn{
     background-color: var(--my-btn-color);
