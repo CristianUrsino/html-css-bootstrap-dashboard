@@ -8,7 +8,6 @@
 }
 body{
     /* font-family: 'Courier New', Courier, monospace;*/
-    font-size: 0.8em;
 }
 img{
     width: 100%;
@@ -17,12 +16,6 @@ img{
     border: 1px solid red;
 }
 /* ****************UTILITIES*************** */
-.bg-primary{
-    background-color: var(--my-primary);
-}
-.bg-gray{
-    background-color: var(--my-gray);
-}
 .my-btn{
     background-color: var(--my-btn-color);
     color: white;
@@ -32,8 +25,36 @@ img{
     border: none;
     line-height: 100%;
 }
+.my-btn-square{
+    background-color: transparent;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #808080;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    margin-left: 5px;
+    line-height: 100%;
+    padding: 0 0 3px 0;
+    color: #808080;
+}
 .border-none{
     border: none !important;
+}
+.bg-primary{
+    background-color: var(--my-primary);
+}
+.bg-gray{
+    background-color: var(--my-gray);
+}
+.bg-green{
+    background-color: #198754;
+}
+.bg-yellow{
+    background-color: #ffc107;
+}
+.bg-red{
+    background-color: #dc3545;
 }
 /* *************STUCTURE************* */
 .wrapper{
@@ -86,16 +107,20 @@ header figure{
     height: 20px;
     padding: 0 0 1px 0;
 }
-#btn-offcanvas{
-    background-color: transparent;
-    color: white;
-    text-align: center;
+/* first main div */
+#prossime-classi th{
+    font-weight: normal !important;
+}
+#prossime-class th:first-of-type,td:first-child{
+    width: 40%;
+}
+i.circle{
     display: inline-block;
-    border: 1px solid white;
     width: 25px;
     height: 25px;
-    border-radius: 3px;
-    margin-left: 10px;
-    line-height: 100%;
-    padding: 0 0 3px 0;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #f26551;
+    color: white;
 }
