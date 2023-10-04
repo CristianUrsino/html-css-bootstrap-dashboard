@@ -74,7 +74,7 @@
                             <div>
                                 <button type="button" class="my-btn me-1">Lorem.</button>
                                 <i class="fa-solid fa-magnifying-glass pe-1"></i>
-                                <button type="button" class="my-btn d-lg-none d-inline-block me-1">+</button>
+                                <button type="button" class="my-btn circle d-lg-none d-inline-block me-1">+</button>
                                 <button type="button" class="my-btn d-lg-inline-block d-none me-1">Lorem, ipsum.</button>
                                 <button type="button" class="my-btn d-lg-inline-block d-none me-1">Lorem. ipsum.</button>
                                 <button type="button" class="my-btn d-lg-inline-block d-none me-1">Lorem, ipsum</button>
@@ -87,14 +87,78 @@
                         <div class="debug col-12 col-sm-3">
                             <span>Lorem, ipsum dolor.</span>
                             <button id="btn-offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">+</button>
-                            <!-- offcanvas  -->
+                            <!-- -----------OFFCANVAS---------  -->
                             <div class="offcanvas offcanvas-end " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
                                 <div class="offcanvas-header">
                                     <div>Lorem ipsum dolor sit amet.</div>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
-                                <div class="offcanvas-body">
-                                    <p>Try scrolling the rest of the page to see this option in action.</p>
+                                <div class="offcanvas-body container-fluid">
+                                    <form action="#">
+                                        <div class="row wrap">
+                                            <div class="mb-3 col-12 col-sm-6">
+                                                <label for="input_nome" class="form-label">nome</label>
+                                                <input type="text" id="input_nome" class="form-control" value="">
+                                            </div>
+                                            <div class="mb-3 col-12 col-sm-6">
+                                                <label for="input_cognome" class="form-label">cognome</label>
+                                                <input type="text" class="form-control" id="input_cognome" value="">
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <label for="email" class="form-label">email</label>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="text" id="email" class="form-control" placeholder="" aria-label="Email" value="">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <label for="inputPassword5" class="form-label">Password</label>
+                                                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <label for="c-email" class="form-label">conferma email</label>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="text" id="c-email" class="form-control" placeholder="" aria-label="Email" value="">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <label for="c-inputPassword5" class="form-label">conferma Password</label>
+                                                <input type="password" id="c-inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                                            </div>
+                                            <div class="mb-3 col-12">
+                                                <label for="input_ind" class="form-label">indirizzo</label>
+                                                <input type="text" id="input_ind" class="form-control" value="">
+                                            </div>
+                                            <div class="mb-3 col-12 col-sm-6">
+                                                <label for="input_citta" class="form-label">città</label>
+                                                <input type="text" id="input_citta" class="form-control" value="">
+                                            </div>
+                                            <div class="mb-3 col-12 col-sm-4">
+                                                <label for="stato" class="form-label">stato</label>
+                                                <select class="form-select" aria-label="stato" id="stato">
+                                                    <option selected>scegli...</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                  </select>
+                                            </div>
+                                            <div class="mb-3 col-12 col-sm-2">
+                                                <label for="input_cap" class="form-label">cap</label>
+                                                <input type="text" id="input_cap" class="form-control" value="">
+                                            </div>
+                                            <div class="mb-3 col-12">
+                                                <label for="formFile" class="form-label">foto</label>
+                                                <input class="form-control" type="file" id="formFile">
+                                            </div>
+                                            <div class="mb-3 form-check ms-3">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+                                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary d-inline-block">lorem</button>
+                                        <button type="reset" class="btn btn-warning">lorem</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
